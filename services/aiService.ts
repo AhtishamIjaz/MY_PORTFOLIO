@@ -1,8 +1,5 @@
-import { GoogleGenAI, Chat } from "@google/genai";
+import Groq from "groq-sdk";
 import { ChatMessage } from "../types";
-
-// Helper to create a delay
-const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
 const SYSTEM_INSTRUCTION = `
 You are 'Aura', an advanced AI assistant for the portfolio website of Ahtisham, an AI Engineer.
@@ -51,56 +48,38 @@ Here is the context about Ahtisham:
 **Constraint:** If asked about something not in the context, politely steer the conversation back to Ahtisham's professional capabilities or portfolio. Keep answers relatively short (under 100 words).
 `;
 
-let chatSession: Chat | null = null;
-let genAI: GoogleGenAI | null = null;
+let groq: Groq | null = null;
 
-const getAI = () => {
-  if (!genAI) {
-    const apiKey = process.env.API_KEY;
+const getGroq = () => {
+  if (!groq) {
+    const apiKey = process.env.GROQ_API_KEY;
     if (!apiKey) {
-      console.error("API Key is missing!");
+      console.error("Groq API Key is missing!");
       return null;
     }
-    genAI = new GoogleGenAI({ apiKey });
+    groq = new Groq({ apiKey, dangerouslyAllowBrowser: true });
   }
-  return genAI;
+  return groq;
 };
 
-export const initializeChat = async (): Promise<boolean> => {
-  const ai = getAI();
-  if (!ai) return false;
+export const sendMessageToAI = async (message: string): Promise<string> => {
+  const client = getGroq();
+  if (!client) return "I apologize, but my connection to the neural network is currently unstable. Please check the API configuration.";
 
   try {
-    chatSession = ai.chats.create({
-      model: 'gemini-3-flash-preview',
-      config: {
-        systemInstruction: SYSTEM_INSTRUCTION,
-        temperature: 0.7,
-      }
+    const chatCompletion = await client.chat.completions.create({
+      messages: [
+        { role: "system", content: SYSTEM_INSTRUCTION },
+        { role: "user", content: message }
+      ],
+      model: "llama-3.3-70b-versatile",
+      temperature: 0.7,
+      max_tokens: 500,
     });
-    return true;
-  } catch (error) {
-    console.error("Failed to initialize chat:", error);
-    return false;
-  }
-};
 
-export const sendMessageToGemini = async (message: string): Promise<string> => {
-  if (!chatSession) {
-    const success = await initializeChat();
-    if (!success) return "I apologize, but my connection to the neural network is currently unstable. Please check the API configuration.";
-  }
-
-  try {
-    if (!chatSession) throw new Error("Chat session not initialized");
-    
-    // Safety delay to prevent rapid-fire issues if called in tight loops
-    await delay(500);
-    
-    const result = await chatSession.sendMessage({ message });
-    return result.text || "I processed that, but couldn't generate a text response.";
+    return chatCompletion.choices[0]?.message?.content || "I processed that, but couldn't generate a response.";
   } catch (error) {
-    console.error("Error sending message to Gemini:", error);
+    console.error("Error sending message to Groq:", error);
     return "I encountered a temporary error while processing your request. Please try again.";
   }
 };

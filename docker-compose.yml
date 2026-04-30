@@ -1,0 +1,9 @@
+services:
+  portfolio:
+    build:
+      context: .
+      args:
+        - GROQ_API_KEY=${GROQ_API_KEY}
+    ports:
+      - "8080:80"
+    restart: always

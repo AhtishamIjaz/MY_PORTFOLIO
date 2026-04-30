@@ -3,6 +3,10 @@ FROM node:20-alpine AS build
 
 WORKDIR /app
 
+# Add ARG for Groq API Key (Vite requires this at build time)
+ARG GROQ_API_KEY
+ENV GROQ_API_KEY=$GROQ_API_KEY
+
 # Copy package files and install dependencies
 COPY package*.json ./
 RUN npm install

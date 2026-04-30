@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { MessageSquare, X, Send, Sparkles, Loader2, User, Bot } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChatMessage } from '../types';
-import { sendMessageToGemini } from '../services/geminiService';
+import { sendMessageToAI } from '../services/aiService';
 
 const AIChatWidget: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,7 +40,7 @@ const AIChatWidget: React.FC = () => {
     setInputText('');
     setIsTyping(true);
 
-    const responseText = await sendMessageToGemini(userMsg.text);
+    const responseText = await sendMessageToAI(userMsg.text);
 
     const aiMsg: ChatMessage = {
       id: (Date.now() + 1).toString(),
