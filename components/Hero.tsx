@@ -3,9 +3,9 @@ import { ArrowRight, Download, Github, Linkedin, Mail, Instagram } from "lucide-
 import { motion } from "framer-motion";
 import { generatePDF } from "../services/pdfGenerator";
 
-import profileImage from "../assets/pfp.png";
+import profileImage from "../assets/pfp.jpg";
 
-// REPLACEME: Upload your photo to a site like Imgur or GitHub and paste the direct link here.
+// Professional profile image from assets
 const PROFILE_IMAGE_URL = profileImage;
 
 // Custom X (formerly Twitter) Logo component
@@ -90,7 +90,7 @@ const Hero: React.FC = () => {
           >
             I'm{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-accent">
-              Abdul Qahir Jalali
+              Ahtisham
             </span>
             <br />
             <span className="relative inline-block mt-2">
@@ -109,6 +109,9 @@ const Hero: React.FC = () => {
                 />
               </svg>
             </span>
+            <div className="text-xl md:text-2xl font-medium text-slate-500 mt-2">
+              Agentic AI & RAG Systems | MLOps & Cloud (AWS)
+            </div>
           </motion.h1>
 
           <motion.p
@@ -117,8 +120,7 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-base sm:text-lg md:text-lg lg:text-xl text-slate-600 max-w-lg leading-relaxed"
           >
-            Building scalable AI solutions that solve real-world problems using
-            cutting-edge technologies.
+            Building AI systems that don’t just work in notebooks — but scale in the real world.
           </motion.p>
 
           <motion.div
@@ -137,12 +139,13 @@ const Hero: React.FC = () => {
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </span>
             </a>
-            <button
-              onClick={generatePDF}
+            <a
+              href="/assets/resume.pdf"
+              download="Ahtisham_Resume.pdf"
               className="px-6 py-3 rounded-full border border-slate-200 bg-white text-slate-700 font-medium hover:bg-slate-50 transition-colors flex items-center gap-2 shadow-sm hover:shadow text-sm sm:text-base"
             >
               <Download className="w-4 h-4" /> Download CV
-            </button>
+            </a>
           </motion.div>
 
           <motion.div
@@ -152,33 +155,33 @@ const Hero: React.FC = () => {
             className="flex gap-3 sm:gap-6 pt-6 sm:pt-8 flex-wrap"
           >
              <SocialLink
-               href={isMobile ? "mailto:abdulqahir421@gmail.com" : "https://mail.google.com/mail/?view=cm&fs=1&to=abdulqahir421@gmail.com"}
+               href={isMobile ? "mailto:ahtishamijaz55@gmail.com" : "https://mail.google.com/mail/?view=cm&fs=1&to=ahtishamijaz55@gmail.com"}
                icon={<Mail className="w-5 h-5" />}
                isMobile={isMobile}
              />
              <SocialLink
-               href={isMobile ? "whatsapp://send?phone=923408198770" : "https://wa.me/923408198770"}
+               href={isMobile ? "whatsapp://send?phone=923149799265" : "https://wa.me/923149799265"}
                icon={<WhatsAppIcon className="w-5 h-5" />}
                isMobile={isMobile}
              />
              <div className="w-px h-8 bg-slate-300 mx-2 hidden sm:block"></div>
              <SocialLink
-               href="https://github.com/Abdul-Qahir-Jalali"
+               href="https://github.com/AhtishamIjaz"
                icon={<Github className="w-5 h-5" />}
                isMobile={isMobile}
              />
              <SocialLink
-               href="https://www.linkedin.com/in/abdul-qahir-jalali"
+               href="https://www.linkedin.com/in/ahtisham-ijaz-768213342/"
                icon={<Linkedin className="w-5 h-5" />}
                isMobile={isMobile}
              />
              <SocialLink
-               href={isMobile ? "twitter://user?screen_name=_Qahir_" : "https://x.com/_Qahir_"}
+               href={isMobile ? "twitter://user?screen_name=ahtisham" : "#"}
                icon={<XIcon className="w-4 h-4" />}
                isMobile={isMobile}
              />
              <SocialLink
-               href={isMobile ? "instagram://user?username=abdul_qahir_00" : "https://www.instagram.com/abdul_qahir_00?igsh=MWFoMjJsMGxraG56NQ=="}
+               href={isMobile ? "instagram://user?username=ATISHAMEJAZ" : "https://www.instagram.com/ATISHAMEJAZ"}
                icon={<Instagram className="w-5 h-5" />}
                isMobile={isMobile}
              />
@@ -196,7 +199,7 @@ const Hero: React.FC = () => {
 
               <img
                 src={PROFILE_IMAGE_URL}
-                alt="Abdul Qahir Jalali"
+                alt="Ahtisham"
                 className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                 onError={(e) => {
                   e.currentTarget.src =
@@ -217,12 +220,12 @@ const Hero: React.FC = () => {
 
 
 const WORDS = [
-  "Agentic AI & GenAI",
-  "Deep Learning & NLP",
-  "Computer Vision",
-  "MLOps & Deployment",
-  "Cloud Computing (AWS)",
-  "Databases & Data Science"
+  "Agentic AI Systems",
+  "RAG Architectures",
+  "LangGraph & LangChain",
+  "MLOps & Docker",
+  "AWS Cloud Infrastructure",
+  "Vector Databases"
 ];
 
 const TypewriterTag: React.FC = () => {
@@ -271,8 +274,8 @@ const TypewriterTag: React.FC = () => {
 
 
   return (
-    <div className="px-3 sm:px-4 py-1.5 sm:py-2 bg-white/95 backdrop-blur-md border border-primary/20 rounded-full shadow-[0_0_15px_rgba(37,99,235,0.3)] ring-1 ring-primary/10 flex items-center gap-2 max-w-[90%] mx-auto transform transition-all duration-300 hover:scale-105 hover:border-primary/40 hover:shadow-[0_0_20px_rgba(37,99,235,0.4)]">
-      <span className="w-2 h-2 rounded-full bg-primary animate-pulse shrink-0 shadow-[0_0_8px_rgba(37,99,235,0.6)]"></span>
+    <div className="px-3 sm:px-4 py-1.5 sm:py-2 bg-white/95 backdrop-blur-md border border-primary/20 rounded-full shadow-[0_0_15px_rgba(16,185,129,0.3)] ring-1 ring-primary/10 flex items-center gap-2 max-w-[90%] mx-auto transform transition-all duration-300 hover:scale-105 hover:border-primary/40 hover:shadow-[0_0_20px_rgba(16,185,129,0.4)]">
+      <span className="w-2 h-2 rounded-full bg-primary animate-pulse shrink-0 shadow-[0_0_8px_rgba(16,185,129,0.6)]"></span>
       <span className="text-xs sm:text-sm font-mono text-slate-700 font-bold truncate">
         {text}
         <span className={`${blink ? "opacity-100" : "opacity-0"} text-primary ml-0.5`}>|</span>

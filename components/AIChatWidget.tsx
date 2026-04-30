@@ -10,7 +10,7 @@ const AIChatWidget: React.FC = () => {
     {
       id: 'welcome',
       role: 'model',
-      text: "Hi! I'm Aura, Abdul's AI assistant. Ask me anything about his skills, experience, or projects.",
+      text: "Hi! I'm Aura, Ahtisham's AI assistant. Ask me anything about his skills, experience, or projects.",
       timestamp: new Date()
     }
   ]);
@@ -132,7 +132,7 @@ const AIChatWidget: React.FC = () => {
                   value={inputText}
                   onChange={(e) => setInputText(e.target.value)}
                   onKeyPress={handleKeyPress}
-                  placeholder="Ask about Abdul..."
+                  placeholder="Ask about Ahtisham..."
                   disabled={isTyping}
                   className="w-full bg-slate-50 border border-slate-200 rounded-xl pl-4 pr-12 py-3 text-sm text-slate-900 focus:outline-none focus:border-primary/50 focus:bg-white transition-all placeholder:text-slate-400 disabled:opacity-50"
                 />
@@ -153,7 +153,7 @@ const AIChatWidget: React.FC = () => {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => setIsOpen(!isOpen)}
-        className="group relative flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-r from-primary to-accent shadow-[0_0_20px_rgba(6,182,212,0.4)] hover:shadow-[0_0_30px_rgba(6,182,212,0.6)] transition-shadow duration-300"
+        className="group relative flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-r from-primary to-accent shadow-[0_0_20px_rgba(16,185,129,0.4)] hover:shadow-[0_0_30px_rgba(16,185,129,0.6)] transition-shadow duration-300"
       >
         <span className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full border-2 border-white animate-ping"></span>
         <span className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full border-2 border-white"></span>

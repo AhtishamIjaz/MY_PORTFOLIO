@@ -32,7 +32,7 @@ const About: React.FC = () => {
 
             {/* Intro text */}
             <p className="text-slate-600 text-base leading-relaxed mb-10">
-              I am an AI Engineer and BSCS graduate focused on building practical, efficient solutions that deliver tangible value. I thrive on solving real-world problems by applying a robust, end-to-end technical stack.
+              I am an AI Engineer specializing in Agentic AI systems, Retrieval-Augmented Generation (RAG), and production-grade machine learning architectures. I focus on building scalable, fault-tolerant AI solutions that solve complex real-world problems.
             </p>
 
             {/* Stats section (mt-auto removed, space controlled by mb-10 on the paragraph above) */}
@@ -64,7 +64,7 @@ const About: React.FC = () => {
                   <Server className="w-6 h-6 text-secondary" /> My Expertise
                 </strong>
                 <p className="leading-relaxed text-slate-600 text-sm sm:text-base">
-                  I specialize in core artificial intelligence (GenAI, Deep Learning, ML, NLP, and Computer Vision). To bring these models to production, I architect and deploy complex systems utilizing Agentic AI, Data Science, Data Analytics, MLOps, and Cloud Computing (AWS).
+                  I specialize in building intelligent, autonomous systems using LangGraph, LangChain, and advanced RAG architectures. I bridge the gap between AI research and production by implementing robust MLOps practices and cloud-native deployments on AWS.
                 </p>
               </div>
             </div>
@@ -77,7 +77,7 @@ const About: React.FC = () => {
                   <Brain className="w-6 h-6 text-accent" /> My Passion
                 </strong>
                 <p className="leading-relaxed text-slate-600 text-sm sm:text-base">
-                  While my technical toolkit is industry-agnostic, I am deeply passionate about mental wellness technology. I actively focus on engineering preventative tools, digital therapeutics, and intelligent applications designed to help users overcome mental challenges and build stronger daily habits.
+                  I am passionate about developing AI systems that don't just work in notebooks — but scale in the real world. My goal is to build intelligent agents that can reason, plan, and execute tasks autonomously to solve industrial and logistical challenges.
                 </p>
               </div>
             </div>

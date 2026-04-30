@@ -5,176 +5,59 @@ import { ExternalLink, Github, PlayCircle, BookOpen } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export const projects: Project[] = [
-  // --- AGENTIC AI & LLMs ---
-    {
-    id: 1, // Number 1 spot!
-    title: "PsychTrainer",
-    description: "An industrial-grade training platform utilizing LangGraph's multi-agent orchestration. Psychology students interview an autonomous AI patient presenting with OCD, while a silent Agentic Professor secretly grades their clinical reasoning and empathy in real-time.",
-    tags: ["LangGraph", "FastAPI", "Qdrant RAG", "LiteLLM", "Groq (Llama 3.3)"],
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=800&auto=format&fit=crop",
-    githubUrl: "https://github.com/Abdul-Qahir-Jalali/Psych-Trainer/tree/developer",
-    demoUrl: "http://3.236.112.210:8000/",
-    // slug: "psychtrainer"
-  },
-
   {
-    id: 101,
-    title: "Quote and Order Agent",
-    description: "An agent chatbot that acts as a sales representative to help fill complex forms, calculate quotes, and place orders.",
-    tags: ["Python", "FastAPI", "LLMs", "Agentic AI", "LangGraph", "MCP Servers"],
-    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop",
-    githubUrl: "https://github.com/Abdul-Qahir-Jalali/Quote_and_Order_Agent",
-    demoUrl: "https://quote-and-order-agent.vercel.app/"
+    id: 1,
+    title: "WeatherPro AI",
+    description: "An industrial-grade MLOps system for real-time weather forecasting using OpenWeatherMap API and RandomForest. Features MLflow tracking and Evidently AI for drift detection.",
+    tags: ["FastAPI", "MLflow", "Evidently AI", "Docker", "AWS"],
+    image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?q=80&w=800&auto=format&fit=crop",
+    githubUrl: "#",
+    demoUrl: "#"
   },
   {
-    id: 102,
-    title: "Fact Checker Agent",
-    description: "This agent verifies claimed statements using live web search to confirm if they are true.",
-    tags: ["Python", "LangGraph", "FastAPI", "Groq (Llama 3)", "LangChain", "Tavily API", "MCP Server"],
-    image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=800&auto=format&fit=crop",
-    githubUrl: "https://github.com/Abdul-Qahir-Jalali/fact_checker_agent",
-    demoUrl: "https://fact-checker-agent.vercel.app/"
+    id: 2,
+    title: "RAG Career Counseling",
+    description: "An intelligent chatbot built using RAG and LLMs to provide personalized career recommendations based on user profiles and market trends.",
+    tags: ["RAG", "LLM", "Vector DB", "Flask", "Python"],
+    image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=800&auto=format&fit=crop",
+    githubUrl: "#",
+    demoUrl: "#"
   },
   {
-    id: 103,
-    title: "SQL Analyst Agent",
-    description: "An agent that lets you talk to your database in plain English to view data and create new records.",
-    tags: ["Python", "LangGraph", "Groq (Llama 3.3)", "MySQL", "SQL", "MCP server"],
-    image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=800&auto=format&fit=crop",
-    githubUrl: "https://github.com/Abdul-Qahir-Jalali/sql_analyst-agent",
-    demoUrl: "https://sql-analyst-agent.vercel.app/"
-  },
-  {
-    id: 104,
-    title: "24/7 AI Email Auto-Responder",
-    description: "An AI agent acting as customer support for mobile shops, automatically replying to client queries about phones.",
-    tags: ["Python", "LangGraph", "Groq (Llama 3)", "Gmail API", "Google OAuth2", "MCP Architecture"],
+    id: 3,
+    title: "Agentic Email Assistant",
+    description: "An autonomous agent powered by LangGraph and Docker that manages emails, drafts responses, and categorizes incoming mail with advanced reasoning.",
+    tags: ["LangGraph", "Docker", "Python", "LLM"],
     image: "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?q=80&w=800&auto=format&fit=crop",
-    githubUrl: "https://github.com/Abdul-Qahir-Jalali/auto-mail-agent",
-    demoUrl: "https://www.linkedin.com/posts/abdul-qahir-jalali_ai-agenticai-python-activity-7413610160088301568-P6JH?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFKp7NQBm3kfn_u8WtJxwxRoKuL-vPxRjtg" 
-  },
-  {
-    id: 5,
-    title: "MindGuard AI",
-    description: "Unlike basic chatbots, this therapist uses proper medical logic to diagnose symptoms, explain full problem, create flowcharts, and suggest videos.",
-    tags: ["React", "Gemini API", "Mermaid.js", "Tailwind"],
-    image: "https://images.unsplash.com/photo-1493836512294-502baa1986e2?q=80&w=800&auto=format&fit=crop",
-    githubUrl: "https://github.com/Abdul-Qahir-Jalali/mental_health_chatbot",
-    demoUrl: "https://mind-guard-ai-qahir.vercel.app/"
-  },
-
-  // --- COMPUTER VISION & MLOPS ---
-  {
-    id: 105,
-    title: "Object Detection Dashboard UI",
-    description: "A modern frontend interface featuring secure Sign Up and Sign In pages designed for an object detection platform.",
-    tags: ["TypeScript", "React", "Python", "SQL"],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
-    githubUrl: "https://github.com/Abdul-Qahir-Jalali/object-detector",
-    demoUrl: "https://object-detector-eta.vercel.app/"
-  },
-  {
-    id: 15,
-    title: "Object Detector",
-    description: "An end-to-end MLOps pipeline detecting objects like boxes, documents, houses and chairs. It automatically collects data and retrains itself.",
-    tags: ["Python", "YOLO11", "Docker", "MLOps"],
-    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800&auto=format&fit=crop",
-    githubUrl: "https://github.com/Abdul-Qahir-Jalali/object_detection",
-    demoUrl: "https://huggingface.co/spaces/qahir00/object_detection"
-  },
-  {
-    id: 6,
-    title: "PostureGuard",
-    description: "A real-time webcam tool that detects forward head posture and plays continuous audio alerts until you sit straight.",
-    tags: ["React", "MediaPipe Pose", "Web Speech API"],
-    image: "https://images.unsplash.com/photo-1531973576160-7125cd663d86?q=80&w=800&auto=format&fit=crop",
-    githubUrl: "https://github.com/Abdul-Qahir-Jalali/PostureGuard---Real-Time-Forward-Head-Posture-Detection",
-    demoUrl: "https://real-time-postureguard.netlify.app/"
-  },
-  {
-    id: 106,
-    title: "Spam Email Detection",
-    description: "An end-to-end spam email detection pipeline that auto-retrains when accuracy drops, adapting to new spam tricks to maintain high performance.",
-    tags: ["Python", "Docker", "DVC", "MLflow", "MLOps"],
-    image: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?q=80&w=800&auto=format&fit=crop",
-    githubUrl: "https://github.com/Abdul-Qahir-Jalali/spam-email_detection",
-    demoUrl: "" 
-  },
-  {
-    id: 7,
-    title: "Urdu Deepfake Audio Detector (FYP)",
-    description: "The first-ever Urdu deepfake detector, trained on a custom dataset of 9,600 audio clips to identify voice clones.",
-    tags: ["Python", "PyTorch", "Wav2Vec2", "ElevenLabs"],
-    image: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=800&auto=format&fit=crop",
-    githubUrl: "https://github.com/Abdul-Qahir-Jalali/urdu-deepfake-audio-detection",
-    demoUrl: "https://abdulqahir-urdu-deepfake-audio-detector.hf.space"
-  },
-
-  // --- GENERATIVE AI ---
-  {
-    id: 13,
-    title: "Text-to-Speech Generator",
-    description: "Converts text to realistic speech using Coqui TTS with a simple interface.",
-    tags: ["Python", "Coqui TTS", "Gradio"],
-    image: "https://images.unsplash.com/photo-1589903308904-1010c2294adc?q=80&w=800&auto=format&fit=crop",
-    githubUrl: "https://github.com/Abdul-Qahir-Jalali/TTS-with-gradio",
-    demoUrl: "https://huggingface.co/spaces/qahir00/text-to-speech"
-  },
-  {
-    id: 12,
-    title: "Text-to-Image Generator",
-    description: "Generates unique high-quality images from text prompts using Stable Diffusion.",
-    tags: ["Python", "Stable Diffusion", "Gradio"],
-    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=800&auto=format&fit=crop",
-    githubUrl: "https://github.com/Abdul-Qahir-Jalali/text_to_image",
-    demoUrl: "https://huggingface.co/spaces/qahir00/text-to-image-generator"
-  },
-
-  // --- DATA SCIENCE & ANALYTICS ---
-  {
-    id: 151,
-    title: "EPL Data Analysis",
-    description: "A comprehensive analysis of English Premier League stats featuring interactive Atlas visualizations and an ML model for match predictions.",
-    tags: ["Python", "Altair", "Scikit-learn", "Pandas"],
-    image: "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=800&auto=format&fit=crop",
-    githubUrl: "https://github.com/Abdul-Qahir-Jalali/epl-2019-2020-data-analysis",
-    demoUrl: "https://abdul-qahir-jalali.github.io/epl-2019-2020-data-analysis/"
-  },
-  {
-    id: 10,
-    title: "Zomato Data Analysis",
-    description: "Visualizes restaurant trends, pricing, and ratings from raw data.",
-    tags: ["Python", "Pandas", "Matplotlib", "Seaborn"],
-    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&auto=format&fit=crop",
-    githubUrl: "https://github.com/Abdul-Qahir-Jalali/zomato-data-analysis",
-    demoUrl: "https://abdul-qahir-jalali.github.io/zomato-data-analysis/"
-  },
-  {
-    id: 9,
-    title: "Customer Segmentation",
-    description: "Uses unsupervised K-Means clustering to uncover hidden patterns and automatically group customers into distinct behavioral categories.",
-    tags: ["Python", "Scikit-learn", "K-Means"],
-    image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800&auto=format&fit=crop",
-    githubUrl: "https://github.com/Abdul-Qahir-Jalali/customer_clustering_analysis",
-    demoUrl: "https://abdul-qahir-jalali.github.io/customer_clustering_analysis/"
-  },
-  {
-    id: 11,
-    title: "Customer Churn Prediction",
-    description: "Uses Deep Learning to predict if customers will leave.",
-    tags: ["Python", "ANN", "Deep Learning"],
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop",
-    githubUrl: "https://github.com/Abdul-Qahir-Jalali/customer_churn_prediction",
-    demoUrl: "https://abdul-qahir-jalali.github.io/customer_churn_prediction/"
+    githubUrl: "#",
+    demoUrl: "#"
   },
   {
     id: 4,
-    title: "Crop Recommendation",
-    description: "Analyzes soil nutrients and weather data provided by the user to recommend the best crop for optimal growth.",
-    tags: ["Python", "Flask", "Scikit-learn"],
-    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=800&auto=format&fit=crop",
-    githubUrl: "https://github.com/Abdul-Qahir-Jalali/crop-recommendation-system",
-    demoUrl: "https://qahir.pythonanywhere.com/"
+    title: "Persistent Interviewer",
+    description: "An AI roleplay interviewer deployed on AWS that maintains session state, providing a realistic and persistent interview experience.",
+    tags: ["AWS", "Python", "LLM", "State Persistence"],
+    image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=800&auto=format&fit=crop",
+    githubUrl: "#",
+    demoUrl: "#"
+  },
+  {
+    id: 5,
+    title: "AI Medical Chatbot",
+    description: "A RAG-based medical assistant capable of answering health-related queries using a curated knowledge base of medical literature.",
+    tags: ["RAG", "Python", "LLM", "Healthcare AI"],
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=800&auto=format&fit=crop",
+    githubUrl: "#",
+    demoUrl: "#"
+  },
+  {
+    id: 6,
+    title: "Stock Price Prediction",
+    description: "A deep learning model using LSTM networks to predict future stock prices based on historical time-series data.",
+    tags: ["LSTM", "Python", "TensorFlow", "Finance"],
+    image: "https://images.unsplash.com/photo-1611974717482-98ea133c9c93?q=80&w=800&auto=format&fit=crop",
+    githubUrl: "#",
+    demoUrl: "#"
   }
 ];
 
@@ -189,7 +72,7 @@ const Projects: React.FC = () => {
               A showcase of my work in Agentic AI, MLOps, Computer Vision, and Data Science.
             </p>
           </div>
-          <a href="https://github.com/Abdul-Qahir-Jalali" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center gap-2 text-primary hover:text-secondary transition-colors font-medium">
+          <a href="https://github.com/AhtishamIjaz" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center gap-2 text-primary hover:text-secondary transition-colors font-medium">
             View Github <Github className="w-4 h-4" />
           </a>
         </div>

@@ -50,7 +50,7 @@ const Education: React.FC = () => {
                     </div>
                     <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-accent/5 border border-accent/20 text-xs sm:text-sm font-medium text-slate-700">
                       <Award className="w-3 h-3 sm:w-4 sm:h-4 text-accent" />
-                      <span>CGPA: 3.50 / 4.00</span>
+                      <span>CGPA: 3.23 / 4.00</span>
                     </div>
                   </div>
                   

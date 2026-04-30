@@ -5,59 +5,28 @@ import { Briefcase, Calendar, ExternalLink, MapPin } from 'lucide-react';
 
 const experiences: ExperienceItem[] = [
   {
-    id: 2,
-    role: "Junior AI Engineer",
-    company: "Metropolitan Solutions (Pvt) Limited",
-    companyUrl: "https://www.gomwd.com",
-    period: "Dec 2025 - Present",
-    workMode: "Onsite",
-    description: [
-      "Architected and deployed autonomous AI agent chatbots, utilizing LangGraph and MCP servers, directly onto the company’s production servers to automate complex workflows.",
-      "Engineered end-to-end MLOps pipelines to automate training, deployment, and monitoring of AI models.",
-      "Integrated custom Deep Learning models and advanced AI solutions into the existing software architecture to significantly enhance operational efficiency",
-      "Orchestrated full lifecycle of AI applications, from initial data preparation through to final production deployment."
-    ]
-  },
-    {
-    id: 3,
-    role: "AI Engineer & Ambassador",
-    company: "eMental Health International Collaborative (EMHIC)",
-    companyUrl: "https://emhicglobal.com/",
-    period: "Jan 2026 - Present",
-    workMode: "Remote",
-    description: [
-      "Contributing technical AI expertise to foster global best practices and innovation in digital mental health.",
-      "Supporting international collaboration and knowledge exchange to ensure digitally enabled support systems.",
-      "Advocating for a future where all populations have access to safe and effective digitally enabled mental health support."
-    ]
-  },
-
-  {
     id: 1,
-    role: "AI & ML Intern",
-    company: "ITSOLERA Pvt. Ltd.",
-    companyUrl: "https://www.itsolera.com",
-    period: "June 2025 - Aug 2025",
+    role: "AI Engineer Intern",
+    company: "Metropolitan Warehouse & Delivery Corp. (USA)",
+    period: "Present",
     workMode: "Onsite",
     description: [
-      "Built AI systems to detect fake/bot profiles on social media.",
-      "Automated construction progress tracking with ML models.",
-      "Created risk scoring algorithms for agricultural disaster zones.",
-      "Collaborated on diverse AI projects with rapid technical adaptability."
+      "Built agentic AI systems for logistics automation using LangGraph and Python.",
+      "Reduced manual operational tasks by 35% through intelligent process automation.",
+      "Improved system reliability and fault tolerance using advanced state persistence techniques.",
+      "Collaborated on production-grade AI architectures for real-world logistical challenges."
     ]
-  }
-  ,
+  },
   {
-    id: 4,
-    role: "AI & MLIntern",
-    company: "DevelopersHub Corporation",
-    companyUrl: "https://www.linkedin.com/company/developershub-corporation/",
-    period: "June 2024 - Aug 2024",
-    workMode: "Remote",
+    id: 2,
+    role: "Machine Learning Lab Assistant",
+    company: "UAJK",
+    period: "Previous",
+    workMode: "Onsite",
     description: [
-      "Completed a 3-month remote internship focused on the practical application of Machine Learning and Deep Learning techniques.",
-      "Gained hands-on experience in data preprocessing, training predictive models using supervised and unsupervised algorithms, and implementing neural network architectures.",
-      "Successfully translated theoretical AI concepts into functional models, with a strong focus on hyperparameter tuning, model evaluation, and performance optimization."
+      "Assisted students in understanding and implementing machine learning models and data preprocessing techniques.",
+      "Automated evaluation pipelines for student projects, reducing grading time and improving feedback consistency.",
+      "Maintained lab resources and provided technical support for various AI/ML research activities."
     ]
   }
 ];
@@ -81,7 +50,7 @@ const Experience: React.FC = () => {
               className="relative pl-8 md:pl-12"
             >
               {/* Timeline dot */}
-              <div className="absolute -left-[5px] top-2 w-3 h-3 rounded-full bg-primary shadow-[0_0_10px_rgba(6,182,212,0.4)]"></div>
+              <div className="absolute -left-[5px] top-2 w-3 h-3 rounded-full bg-primary shadow-[0_0_10px_rgba(16,185,129,0.4)]"></div>
               
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
                 <div>
