@@ -108,7 +108,7 @@ const Certificates: React.FC = () => {
                 </span>
                 
                 <a 
-                  href={cert.link}
+                  href={`${import.meta.env.BASE_URL}${cert.link.startsWith('/') ? cert.link.slice(1) : cert.link}`}
                   target="_blank"
                   rel="noopener noreferrer" 
                   className="flex items-center gap-1 text-xs font-bold text-primary hover:text-secondary transition-colors uppercase tracking-wide bg-primary/5 hover:bg-primary/10 px-3 py-1.5 rounded-full"
