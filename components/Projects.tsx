@@ -55,7 +55,16 @@ export const projects: Project[] = [
     title: "Stock Price Prediction",
     description: "A deep learning model using LSTM networks to predict future stock prices based on historical time-series data.",
     tags: ["LSTM", "Python", "TensorFlow", "Finance"],
-    image: "https://images.unsplash.com/photo-1611974717482-98ea133c9c93?q=80&w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1640340434855-6084b1f4901c?q=80&w=800&auto=format&fit=crop",
+    githubUrl: "#",
+    demoUrl: "#"
+  },
+  {
+    id: 7,
+    title: "LLM Fine-Tuning Pipeline",
+    description: "An end-to-end pipeline for fine-tuning Large Language Models on custom datasets to improve domain-specific performance and instruction following capabilities.",
+    tags: ["LLaMA", "PyTorch", "LoRA", "HuggingFace"],
+    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=800&auto=format&fit=crop",
     githubUrl: "#",
     demoUrl: "#"
   }
@@ -144,7 +153,7 @@ const Projects: React.FC = () => {
         </div>
         
         <div className="mt-8 md:mt-12 text-center md:hidden">
-          <a href="https://github.com/Abdul-Qahir-Jalali" className="inline-flex items-center gap-2 text-primary hover:text-secondary transition-colors font-medium">
+          <a href="https://github.com/AhtishamIjaz" className="inline-flex items-center gap-2 text-primary hover:text-secondary transition-colors font-medium">
             View Github <Github className="w-4 h-4" />
           </a>
         </div>
