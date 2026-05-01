@@ -67,6 +67,24 @@ export const projects: Project[] = [
     image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=800&auto=format&fit=crop",
     githubUrl: "#",
     demoUrl: "#"
+  },
+  {
+    id: 8,
+    title: "SecureOrder-Pro (Digital Employee)",
+    description: "An agentic AI system deployed on Hugging Face acting as a digital employee to automate secure order processing and intelligent customer interactions.",
+    tags: ["Agentic AI", "Hugging Face", "Python", "LLM"],
+    image: "https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?q=80&w=800&auto=format&fit=crop",
+    githubUrl: "#",
+    demoUrl: "#"
+  },
+  {
+    id: 9,
+    title: "Kidney Disease Classification Pipeline",
+    description: "An end-to-end MLOps pipeline for classifying kidney disease from medical data. Incorporates MLflow for experiment tracking and DVC for data version control.",
+    tags: ["MLOps", "MLflow", "DVC", "Healthcare", "Python"],
+    image: "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?q=80&w=800&auto=format&fit=crop",
+    githubUrl: "#",
+    demoUrl: "#"
   }
 ];
 
