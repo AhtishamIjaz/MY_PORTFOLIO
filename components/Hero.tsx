@@ -139,12 +139,13 @@ const Hero: React.FC = () => {
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </span>
             </a>
-            <button
-              onClick={() => generatePDF()}
-              className="px-6 py-3 rounded-full border border-slate-200 bg-white text-slate-700 font-medium hover:bg-slate-50 transition-colors flex items-center gap-2 shadow-sm hover:shadow text-sm sm:text-base cursor-pointer"
+            <a
+              href={`${import.meta.env.BASE_URL}assets/ATSHAMOFICIAL.pdf`}
+              download="Ahtisham_Resume.pdf"
+              className="px-6 py-3 rounded-full border border-slate-200 bg-white text-slate-700 font-medium hover:bg-slate-50 transition-colors flex items-center gap-2 shadow-sm hover:shadow text-sm sm:text-base"
             >
               <Download className="w-4 h-4" /> Download CV
-            </button>
+            </a>
           </motion.div>
 
           <motion.div
