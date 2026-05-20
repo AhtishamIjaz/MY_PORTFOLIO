@@ -12,7 +12,8 @@ export const projects: Project[] = [
     tags: ["FastAPI", "MLflow", "Evidently AI", "Docker", "AWS"],
     image: "https://images.unsplash.com/photo-1592210454359-9043f067919b?q=80&w=800&auto=format&fit=crop",
     githubUrl: "#",
-    demoUrl: "#"
+    demoUrl: "#",
+    slug: "weatherpro-ai"
   },
   {
     id: 2,
@@ -21,7 +22,8 @@ export const projects: Project[] = [
     tags: ["RAG", "LLM", "Vector DB", "Flask", "Python"],
     image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=800&auto=format&fit=crop",
     githubUrl: "#",
-    demoUrl: "#"
+    demoUrl: "#",
+    slug: "rag-career-counseling"
   },
   {
     id: 3,
@@ -30,7 +32,8 @@ export const projects: Project[] = [
     tags: ["LangGraph", "Docker", "Python", "LLM"],
     image: "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?q=80&w=800&auto=format&fit=crop",
     githubUrl: "#",
-    demoUrl: "#"
+    demoUrl: "#",
+    slug: "agentic-email-assistant"
   },
   {
     id: 4,
@@ -39,7 +42,8 @@ export const projects: Project[] = [
     tags: ["AWS", "Python", "LLM", "State Persistence"],
     image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=800&auto=format&fit=crop",
     githubUrl: "#",
-    demoUrl: "#"
+    demoUrl: "#",
+    slug: "persistent-interviewer"
   },
   {
     id: 5,
@@ -48,7 +52,8 @@ export const projects: Project[] = [
     tags: ["RAG", "Python", "LLM", "Healthcare AI"],
     image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=800&auto=format&fit=crop",
     githubUrl: "#",
-    demoUrl: "#"
+    demoUrl: "#",
+    slug: "ai-medical-chatbot"
   },
   {
     id: 6,
@@ -57,7 +62,8 @@ export const projects: Project[] = [
     tags: ["LSTM", "Python", "TensorFlow", "Finance"],
     image: "https://images.unsplash.com/photo-1640340434855-6084b1f4901c?q=80&w=800&auto=format&fit=crop",
     githubUrl: "#",
-    demoUrl: "#"
+    demoUrl: "#",
+    slug: "stock-price-prediction"
   },
   {
     id: 7,
@@ -66,7 +72,8 @@ export const projects: Project[] = [
     tags: ["LLaMA", "PyTorch", "LoRA", "HuggingFace"],
     image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=800&auto=format&fit=crop",
     githubUrl: "#",
-    demoUrl: "#"
+    demoUrl: "#",
+    slug: "llm-fine-tuning-pipeline"
   },
   {
     id: 8,
@@ -75,7 +82,8 @@ export const projects: Project[] = [
     tags: ["Agentic AI", "Hugging Face", "Python", "LLM"],
     image: "https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?q=80&w=800&auto=format&fit=crop",
     githubUrl: "#",
-    demoUrl: "#"
+    demoUrl: "#",
+    slug: "secureorder-pro"
   },
   {
     id: 9,
@@ -84,7 +92,8 @@ export const projects: Project[] = [
     tags: ["MLOps", "MLflow", "DVC", "Healthcare", "Python"],
     image: "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?q=80&w=800&auto=format&fit=crop",
     githubUrl: "#",
-    demoUrl: "#"
+    demoUrl: "#",
+    slug: "kidney-disease-classification-pipeline"
   }
 ];
 

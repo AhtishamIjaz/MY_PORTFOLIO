@@ -68,81 +68,82 @@ export const generatePDF = () => {
   // --- HEADER ---
   doc.setFont("helvetica", "bold");
   doc.setFontSize(24);
-  doc.text("Abdul Qahir Jalali", 105, y, { align: "center" });
+  doc.text("Ahtisham", 105, y, { align: "center" });
   y += 8;
 
   doc.setFont("helvetica", "normal");
   doc.setFontSize(10);
-  doc.text("Islamabad, Pakistan | (+92) 340 8198770", 105, y, { align: "center" });
+  doc.text("Azad Jammu and Kashmir, Pakistan | (+92) 314 9799265", 105, y, { align: "center" });
   y += 5;
-  doc.text("abdulqahir421@gmail.com | linkedin.com/in/abdul-qahir-jalali", 105, y, { align: "center" });
+  doc.text("ahtishamijaz55@gmail.com | linkedin.com/in/ahtisham-ijaz-768213342/", 105, y, { align: "center" });
   y += 5;
-  doc.text("github.com/Abdul-Qahir-Jalali", 105, y, { align: "center" });
+  doc.text("github.com/AhtishamIjaz", 105, y, { align: "center" });
   y += 10;
 
   // --- ABOUT ME ---
   addHeading("About Me");
-  addBody("Computer Science graduate with a strong foundation in Artificial Intelligence, Machine Learning, Deep Learning, NLP, MLOps and Generative AI. Skilled in building intelligent, data-driven systems and developing solutions for real-world challenges. Passionate about applying AI to understand and improve mental health, helping individuals strengthen their minds and emotional resilience through intelligent, human-centered technologies.");
-
-  // --- RESEARCH INTERESTS ---
-  addHeading("Research Interests");
-  addBody("Applying Artificial Intelligence to understand, support, and strengthen the human mind. Interested in Affective Computing, AI for Mental Health, Digital Mental Health, Emotion Recognition, and Behavioral Modeling. Aiming to use ML, DL, NLP, and Agentic AI to create ethical, human-centered systems promoting emotional well-being.");
+  addBody("AI Engineer specializing in Agentic AI systems, Retrieval-Augmented Generation (RAG), and production-grade machine learning architectures. Experienced in building scalable, fault-tolerant AI solutions using LangGraph, LangChain, and modern MLOps practices. Skilled in deploying real-world AI systems on AWS using Docker, CI/CD pipelines, and monitoring tools. Passionate about developing intelligent, autonomous systems for real-world problem solving.");
 
   // --- EDUCATION ---
-  addHeading("Education & Training");
-  addSubHeading("Bachelor of Science in Computer Science", "Dec 2021 - Nov 2025");
+  addHeading("Education");
+  addSubHeading("Bachelor of Science in Computer Science", "Nov 2021 - Nov 2025");
   addBody("University of Azad Jammu and Kashmir (UAJK) | Muzaffarabad, Pakistan");
-  addBody("Final grade: 3.5 / 4.00");
-  addBody("Thesis: Deep Fake Audio Detection for Urdu Language");
+  addBody("Focus: Artificial Intelligence, Machine Learning, & Software Engineering");
   
   // --- EXPERIENCE ---
   addHeading("Work Experience");
   
-  addSubHeading("Intern – Artificial Intelligence and Machine Learning", "Jun 2025 - Aug 2025");
-  addBody("ITSOLERA Pvt. Ltd. | Islamabad, Pakistan", 0, 10);
+  addSubHeading("AI Engineer Intern", "Present");
+  addBody("Metropolitan Warehouse & Delivery Corp. (USA) | Remote", 0, 10);
   y += 2;
-  addBullet("Contributed to AI-Enhanced Detection of Fake and Bot Profiles on Social Media.");
-  addBullet("Worked on Machine Learning for Construction Progress Monitoring.");
-  addBullet("Developed Multi-Modal Risk Scoring for Disaster-Prone Agricultural Zones.");
-  addBullet("Assisted in data preprocessing, model development, and performance evaluation.");
+  addBullet("Built agentic AI systems for logistics automation using LangGraph and Python.");
+  addBullet("Reduced manual operational tasks by 35% using state persistence and custom tool integration.");
+  addBullet("Designed fault-tolerant agent architectures to ensure reliability in asynchronous communication.");
+
+  addSubHeading("Machine Learning Lab Assistant", "Previous");
+  addBody("University of Azad Jammu and Kashmir (UAJK) | Muzaffarabad, Pakistan", 0, 10);
+  y += 2;
+  addBullet("Assisted students in implementing machine learning models and data preprocessing pipelines.");
+  addBullet("Automated grading evaluation workflows to improve student assessment efficiency.");
 
   // --- PROJECTS ---
   addHeading("Projects");
 
-  addSubHeading("Mental Health Chatbot");
-  addBody("Developed a web-based chatbot using Deepseek API to provide empathetic mental health support. Implemented responsible AI practices with crisis detection, helpline guidance, and disclaimers. Built with Flask, HTML/CSS, and JavaScript.");
+  addSubHeading("WeatherPro AI");
+  addBody("Industrial MLOps weather forecasting system. Features real-time ingestion, RandomForestRegressor, experiment tracking with MLflow, and data drift detection via Evidently AI. Deployed on AWS using Docker and ECR.");
   
-  addSubHeading("DeepFake Audio Detection for Urdu Language (FYP)");
-  addBody("Developed a deepfake audio detection system for the Urdu language. Collected and created a balanced dataset of real and cloned voices, then fine-tuned the 'wav2vec2-large-xlsr-53' model. Built a Flask web app for analysis.");
+  addSubHeading("RAG Career Counseling System (Final Year Project)");
+  addBody("Intelligent counseling bot using RAG and LLMs to provide personalized career recommendations based on user profiles, vector databases, and embeddings. Developed with Flask and Python.");
 
-  addSubHeading("CallReview-Automation using AI");
-  addBody("AI-based system to automate Humanatic call reviews. Records and processes calls, uses ElevenLabs for speech-to-text, and DeepSeek AI for decision making.");
+  addSubHeading("Agentic Email Assistant");
+  addBody("Autonomous agent powered by LangGraph and Docker. Manages emails, drafts responses, and categorizes incoming mail using advanced LLM reasoning and custom toolsets.");
 
-  addSubHeading("Crop Recommendation System");
-  addBody("Built a machine learning model using Random Forest to recommend the best crop based on soil properties. Developed a Flask web app for user interaction.");
+  addSubHeading("Persistent Roleplay Interviewer");
+  addBody("AI interviewer deployed on AWS. Utilizes state persistence to maintain conversation history and context across user sessions for a realistic practice experience.");
 
   // --- SKILLS ---
-  addHeading("Skills");
+  addHeading("Technical Skills");
   
-  addSubHeading("Artificial Intelligence & Data Science");
-  addBody("Machine Learning, Deep Learning, NLP, Data Mining, Generative AI, SQL, MLOps, Data Science, Data Collection, Processing, Analysis, Visualization.");
+  addSubHeading("AI & Machine Learning");
+  addBody("Agentic AI, RAG Systems, LangGraph, LangChain, CrewAI, Prompt Engineering, LLM Fine-Tuning, CNN, RNN, LSTM, Scikit-learn.");
   
   y += 2;
-  addSubHeading("Programming & Development");
-  addBody("Python, C++, HTML, CSS, JavaScript, XML, Java, Scikit-learn, Tensorflow, Pytorch, Keras, Numpy, Pandas, Matplotlib, Seaborn, Nltk, LlamaIndex, Langchain, Git/GitHub, Conda, Jupyter, VS Code.");
+  addSubHeading("MLOps & DevOps");
+  addBody("Docker, AWS (EC2, ECR, IAM, VPC), CI/CD (GitHub Actions), MLflow, DVC, Git & GitHub.");
+
+  y += 2;
+  addSubHeading("Programming & Databases");
+  addBody("Python, FastAPI, Flask, Streamlit, C++, JavaScript, HTML/CSS, ChromaDB, Weaviate, Redis, n8n, MySQL, MongoDB, Power BI.");
 
   // --- CERTIFICATIONS ---
   addHeading("Certifications");
-  addBullet("Responsible AI for Mental Health | Northeastern University (Coursera)");
-  addBullet("Master Problem Solving and Critical Thinking | LearnKartS");
-  addBullet("Effective Problem-Solving and Decision-Making | UC Irvine");
-  addBullet("Machine Learning Specialization | DeepLearning.AI");
-  addBullet("AI For Everyone | DeepLearning.AI");
-  addBullet("Introduction to Certified Professional Biller | AAPC");
+  addBullet("AI Agent Development");
+  addBullet("Large Language Models (LLMs)");
+  addBullet("Simplilearn AI/ML Certification");
+  addBullet("Generative AI Foundations");
+  addBullet("Power BI Data Analysis");
+  addBullet("SQL for Data Science");
+  addBullet("Vibe Coding / Advanced Development");
 
-  // --- LANGUAGES ---
-  addHeading("Languages");
-  addBody("English (C1 - Proficient), Urdu (Native), Pahari (Native)");
-
-  doc.save("Abdul_Qahir_Jalali_CV.pdf");
+  doc.save("Ahtisham_Resume.pdf");
 };

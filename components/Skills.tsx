@@ -21,6 +21,8 @@ const skills: Skill[] = [
   { name: 'LLM Fine-Tuning', level: 88, category: 'AI & Machine Learning', icon: <Sparkles className="text-purple-500" /> },
   { name: 'LangGraph (Advanced)', level: 92, category: 'AI & Machine Learning', icon: <Workflow className="text-blue-600" /> },
   { name: 'LangChain', level: 94, category: 'AI & Machine Learning', icon: <Link className="text-orange-500" /> },
+  { name: 'CrewAI (Agentic Framework)', level: 90, category: 'AI & Machine Learning', icon: <Users className="text-indigo-500" /> },
+  { name: 'Prompt Engineering', level: 95, category: 'AI & Machine Learning', icon: <MessageSquareText className="text-amber-500" /> },
   { name: 'Deep Learning (CNN, RNN, LSTM)', level: 90, category: 'AI & Machine Learning', icon: <Brain className="text-pink-500" /> },
 
   // MLOps & DevOps
@@ -38,7 +40,8 @@ const skills: Skill[] = [
   { name: 'HTML & CSS (Bootstrap)', level: 88, category: 'Programming & Development', icon: <Layout className="text-orange-600" /> },
 
   // Databases & Tools
-  { name: 'ChromaDB & Vector DBs', level: 92, category: 'Databases & Tools', icon: <Search className="text-indigo-500" /> },
+  { name: 'ChromaDB, Weaviate & Redis', level: 92, category: 'Databases & Tools', icon: <Search className="text-indigo-500" /> },
+  { name: 'n8n (Workflow Automation)', level: 88, category: 'Databases & Tools', icon: <Workflow className="text-red-500" /> },
   { name: 'MySQL & MongoDB', level: 85, category: 'Databases & Tools', icon: <Database className="text-slate-600" /> },
   { name: 'Power BI', level: 80, category: 'Databases & Tools', icon: <BarChart className="text-blue-600" /> },
   { name: 'Git & GitHub', level: 92, category: 'Databases & Tools', icon: <Github className="text-slate-800" /> },

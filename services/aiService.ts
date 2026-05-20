@@ -52,9 +52,9 @@ let groq: Groq | null = null;
 
 const getGroq = () => {
   if (!groq) {
-    const apiKey = process.env.GROQ_API_KEY;
+    const apiKey = import.meta.env.VITE_GROQ_API_KEY || (typeof process !== 'undefined' ? process.env.GROQ_API_KEY : undefined);
     if (!apiKey) {
-      console.error("Groq API Key is missing!");
+      console.warn("Groq API Key is missing! Set VITE_GROQ_API_KEY in your .env.local file.");
       return null;
     }
     groq = new Groq({ apiKey, dangerouslyAllowBrowser: true });

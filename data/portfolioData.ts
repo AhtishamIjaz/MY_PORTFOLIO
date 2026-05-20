@@ -13,6 +13,8 @@ export const portfolioData = {
         "LLM Fine-Tuning",
         "LangGraph (Advanced)",
         "LangChain",
+        "CrewAI (Agentic Framework)",
+        "Prompt Engineering",
         "Deep Learning (CNN, RNN, LSTM, ANN)"
       ]
     },
@@ -38,7 +40,8 @@ export const portfolioData = {
     {
       category: "Databases & Tools",
       items: [
-        "ChromaDB, Vector Databases",
+        "ChromaDB, Weaviate, Redis",
+        "n8n (Workflow Automation)",
         "MySQL, MongoDB",
         "Power BI"
       ]

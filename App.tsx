@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import ProjectDetail from './pages/ProjectDetail';
+import AIChatWidget from './components/AIChatWidget';
 
 const App: React.FC = () => {
   const [loading, setLoading] = useState(true);
@@ -46,6 +47,8 @@ const App: React.FC = () => {
             <Route path="/project/:slug" element={<ProjectDetail />} />
           </Routes>
         </main>
+
+        <AIChatWidget />
 
         <Footer />
       </div>
