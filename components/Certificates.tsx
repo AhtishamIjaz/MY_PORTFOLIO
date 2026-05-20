@@ -59,6 +59,27 @@ const certificates: Certificate[] = [
     issuer: "Ahtisham's Certification",
     date: "2026",
     link: "/assets/certificates/vibe coding.pdf"
+  },
+  {
+    id: 8,
+    title: "Introduction to Cloud Computing",
+    issuer: "Simplilearn",
+    date: "May 2026",
+    link: "/assets/certificates/intro_cloud_computing.png"
+  },
+  {
+    id: 9,
+    title: "RAG Course for Beginners",
+    issuer: "Simplilearn",
+    date: "May 2026",
+    link: "/assets/certificates/rag_beginners.png"
+  },
+  {
+    id: 10,
+    title: "Introduction to Neural Network",
+    issuer: "Simplilearn",
+    date: "May 2026",
+    link: "/assets/certificates/intro_neural_network.png"
   }
 ];
 

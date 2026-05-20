@@ -144,6 +144,9 @@ export const generatePDF = () => {
   addBullet("Power BI Data Analysis");
   addBullet("SQL for Data Science");
   addBullet("Vibe Coding / Advanced Development");
+  addBullet("Introduction to Cloud Computing | Simplilearn (May 2026)");
+  addBullet("RAG Course for Beginners | Simplilearn (May 2026)");
+  addBullet("Introduction to Neural Network | Simplilearn (May 2026)");
 
   doc.save("Ahtisham_Resume.pdf");
 };
