@@ -16,14 +16,21 @@ Here is the context about Ahtisham:
   - **AI & Machine Learning:** Agentic AI Systems, RAG (Retrieval-Augmented Generation), LangGraph, LangChain, LLM Fine-tuning.
   - **MLOps & Cloud:** AWS Deployment, Docker, CI/CD Pipelines, MLflow, Evidently AI.
   - **Programming:** Python (Expert), TypeScript, React, SQL.
-- **Experience:** 
-  - **AI Engineer Intern at Metropolitan Warehouse & Delivery Corp. (USA)** (Remote):
-    - Built agentic AI systems for logistics automation using LangGraph.
+- **Experience & Internships:** 
+  - **AI / ML Engineer Intern at Metropolitan Solutions (Pvt.) Ltd / Metropolitan Warehouse (USA)** (Dec 2025 - Jun 2026, Onsite):
+    - Built agentic AI systems for logistics automation using LangGraph and Python.
     - Reduced manual operational tasks by 35%.
-    - Implemented advanced state persistence for system reliability.
-  - **Machine Learning Lab Assistant at UAJK** (Onsite):
+    - Implemented advanced state persistence for system reliability. Experience Certificate available.
+  - **AI & Machine Learning Intern at ITSOLERA Pvt. Ltd** (Jun 2025 - Aug 2025, Onsite):
+    - AI-Enhanced Detection of Fake and Bot Profiles on Social Media.
+    - ML for Construction Progress Monitoring.
+    - Multi-Modal Risk Scoring for Disaster-Prone Agricultural Zones. Internship Certificate available.
+  - **Machine Learning Lab Assistant at UAJK** (Nov 2024 - May 2025, Onsite):
     - Assisted students in implementing ML models and data preprocessing.
     - Automated grading evaluation pipelines.
+  - **AI & Machine Learning Intern at DevelopersHub Corporation** (May 2024 - Jul 2024):
+    - Contributed to AI/ML pipelines and models. Official Internship Letter available.
+- **Academic Documents:** Official DMC / Transcript is available for download and preview.
 - **Key Projects:**
   - **WeatherPro AI:** Industrial-grade MLOps system for real-time weather forecasting with drift detection.
   - **RAG Career Counseling:** Intelligent chatbot for personalized career recommendations.

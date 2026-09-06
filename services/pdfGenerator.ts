@@ -91,16 +91,22 @@ export const generatePDF = () => {
   addBody("Focus: Artificial Intelligence, Machine Learning, & Software Engineering");
   
   // --- EXPERIENCE ---
-  addHeading("Work Experience");
+  addHeading("Work Experience & Internships");
   
-  addSubHeading("AI Engineer Intern", "Present");
-  addBody("Metropolitan Warehouse & Delivery Corp. (USA) | Remote", 0, 10);
+  addSubHeading("AI / ML Engineer Intern", "Dec 2025 - Jun 2026");
+  addBody("Metropolitan Solutions (Pvt.) Ltd / Metropolitan Warehouse (USA) | Onsite", 0, 10);
   y += 2;
   addBullet("Built agentic AI systems for logistics automation using LangGraph and Python.");
   addBullet("Reduced manual operational tasks by 35% using state persistence and custom tool integration.");
   addBullet("Designed fault-tolerant agent architectures to ensure reliability in asynchronous communication.");
 
-  addSubHeading("Machine Learning Lab Assistant", "Previous");
+  addSubHeading("AI & Machine Learning Intern", "Jun 2025 - Aug 2025");
+  addBody("ITSOLERA Pvt. Ltd | Onsite", 0, 10);
+  y += 2;
+  addBullet("Contributed to AI-enhanced detection of fake and bot profiles on social media.");
+  addBullet("Developed ML models for construction monitoring and agricultural multi-modal risk scoring.");
+
+  addSubHeading("Machine Learning Lab Assistant", "Nov 2024 - May 2025");
   addBody("University of Azad Jammu and Kashmir (UAJK) | Muzaffarabad, Pakistan", 0, 10);
   y += 2;
   addBullet("Assisted students in implementing machine learning models and data preprocessing pipelines.");

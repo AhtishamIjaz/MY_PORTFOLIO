@@ -111,22 +111,41 @@ export const portfolioData = {
 
   experience: [
     {
-      role: "AI Engineer Intern",
-      company: "Metropolitan Warehouse & Delivery Corp. (USA)",
-      duration: "Present",
+      role: "AI / ML Engineer Intern",
+      company: "Metropolitan Solutions (Pvt.) Ltd / Metropolitan Warehouse (USA)",
+      duration: "Dec 2025 - Jun 2026",
       highlights: [
-        "Built agentic AI systems for logistics automation",
-        "Reduced manual work by 35%",
-        "Improved system reliability using state persistence"
+        "Built agentic AI systems for logistics automation using LangGraph and Python",
+        "Reduced manual operational tasks by 35% through intelligent process automation",
+        "Improved system reliability and fault tolerance using state persistence techniques"
+      ]
+    },
+    {
+      role: "AI & Machine Learning Intern",
+      company: "ITSOLERA Pvt. Ltd",
+      duration: "Jun 2025 - Aug 2025",
+      highlights: [
+        "AI-Enhanced Detection of Fake and Bot Profiles on Social Media",
+        "Machine Learning for Construction Progress Monitoring",
+        "Multi-Modal Risk Scoring for Disaster-Prone Agricultural Zones"
       ]
     },
     {
       role: "Machine Learning Lab Assistant",
-      company: "UAJK",
-      duration: "Previous",
+      company: "University of Azad Jammu and Kashmir (UAJK)",
+      duration: "Nov 2024 - May 2025",
       highlights: [
-        "Helped students with ML models & preprocessing",
-        "Automated evaluation pipelines"
+        "Assisted undergraduate students in understanding and implementing ML models",
+        "Automated evaluation pipelines for student projects"
+      ]
+    },
+    {
+      role: "AI & Machine Learning Intern",
+      company: "DevelopersHub Corporation",
+      duration: "May 2024 - Jul 2024",
+      highlights: [
+        "Contributed to AI and Machine Learning models and data processing pipelines",
+        "Gained practical experience with deep learning and collaborative tools"
       ]
     }
   ],

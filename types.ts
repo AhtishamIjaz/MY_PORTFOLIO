@@ -30,8 +30,10 @@ export interface ExperienceItem {
   company: string;
   companyUrl?: string;
   period: string;
-  description: string[]
+  description: string[];
   workMode?: string;
+  certificateUrl?: string;
+  certificateLabel?: string;
 }
 
 export interface Skill {

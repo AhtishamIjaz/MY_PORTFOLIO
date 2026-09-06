@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { GraduationCap, Award, Calendar } from 'lucide-react';
+import { GraduationCap, Award, Calendar, FileText, Download, ExternalLink } from 'lucide-react';
 
 const Education: React.FC = () => {
   return (
@@ -36,7 +36,7 @@ const Education: React.FC = () => {
                     <a 
                       href="https://uajk.edu.pk/" 
                       target="_blank" 
-                      rel="noopener noreferrer"
+                      rel="noopener noreferrer" 
                       className="hover:underline hover:text-primary transition-colors"
                     >
                       University of Azad Jammu and Kashmir (UAJK), Muzaffarabad
@@ -57,6 +57,27 @@ const Education: React.FC = () => {
                   <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
                     Completed a comprehensive Bachelor of Science degree in Computer Science. The curriculum provided a deep understanding of core computing concepts, software development lifecycles, and advanced algorithms, laying the groundwork for specialization in Artificial Intelligence and Machine Learning.
                   </p>
+
+                  <div className="mt-6 pt-5 border-t border-slate-100 flex flex-wrap items-center gap-3">
+                    <a
+                      href={`${import.meta.env.BASE_URL}assets/dmc.pdf`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-primary/10 hover:bg-primary text-primary hover:text-white font-semibold text-xs sm:text-sm transition-all duration-200 border border-primary/20 shadow-sm group/btn"
+                    >
+                      <FileText className="w-4 h-4" />
+                      <span>View Official DMC / Transcript</span>
+                      <ExternalLink className="w-3.5 h-3.5 group-hover/btn:translate-x-0.5 transition-transform" />
+                    </a>
+                    <a
+                      href={`${import.meta.env.BASE_URL}assets/dmc.pdf`}
+                      download="Ahtisham_Ijaz_DMC_Transcript.pdf"
+                      className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium text-xs sm:text-sm transition-all duration-200 border border-slate-200"
+                    >
+                      <Download className="w-4 h-4" />
+                      <span>Download DMC</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </motion.div>
